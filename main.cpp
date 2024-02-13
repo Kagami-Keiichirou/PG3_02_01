@@ -1,12 +1,18 @@
-#include "Enemy.h"
 #include <stdio.h>
-#include <Windows.h>
+#include "Enemy.h"
 
-int main() {
-	Enemy* enemy = new Enemy;
-	while (true){
-		enemy->Update();
+int main()
+{
+	Enemy enemy;
+
+	bool GameLoop = true;
+
+	int i = 0;
+
+	while (i < 3)
+	{
+		enemy.Update();
+		i++;
 	}
-	delete enemy;
 	return 0;
 }
